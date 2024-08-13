@@ -16,7 +16,7 @@ app.post("/userSignUp",(req,res)=>{
    input.password=hashedpassword
    console.log(input)
    let result=new loginModel(input)
-   result.save
+   result.save()
    res.json({"status":"success"})
 })
 
